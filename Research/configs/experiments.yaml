@@ -1,0 +1,95 @@
+# =============================================================================
+# DeepShield-X — Experiment Configurations
+# =============================================================================
+# Defines which experiments to run and their parameters.
+
+# Master switch — run all experiments in sequence
+run_all: false
+
+experiments:
+  # Experiment 1: Model Comparison
+  model_comparison:
+    enabled: true
+    description: "Compare all model architectures on the same dataset"
+    models:
+      - "custom_cnn"
+      - "resnet50"
+      - "efficientnet"
+      - "mobilenet"
+      - "xception"
+      - "vit"
+    metrics:
+      - "accuracy"
+      - "precision"
+      - "recall"
+      - "f1"
+      - "roc_auc"
+      - "pr_auc"
+    output_dir: "./experiments/results/model_comparison"
+
+  # Experiment 2: Data Augmentation Impact
+  augmentation:
+    enabled: true
+    description: "Compare training with and without data augmentation"
+    model: "resnet50"
+    output_dir: "./experiments/results/augmentation"
+
+  # Experiment 3: Image Resolution Impact
+  resolution:
+    enabled: true
+    description: "Evaluate impact of input resolution on performance"
+    model: "resnet50"
+    resolutions: [128, 224, 384]
+    output_dir: "./experiments/results/resolution"
+
+  # Experiment 4: JPEG Compression Robustness
+  compression:
+    enabled: true
+    description: "Test robustness to JPEG compression artifacts"
+    model: "resnet50"
+    qualities: [100, 80, 60, 40, 20]
+    output_dir: "./experiments/results/compression"
+
+  # Experiment 5: Blur and Noise Robustness
+  robustness:
+    enabled: true
+    description: "Test robustness to Gaussian blur and noise"
+    model: "resnet50"
+    blur_severities: [1, 3, 5, 7, 9]
+    noise_severities: [0.01, 0.03, 0.05, 0.1, 0.15]
+    output_dir: "./experiments/results/robustness"
+
+  # Experiment 6: Cross-Dataset Generalization
+  cross_dataset:
+    enabled: false
+    description: "Train on FaceForensics++, evaluate on Celeb-DF"
+    model: "resnet50"
+    train_dataset: "faceforensics"
+    test_dataset: "celeb_df"
+    output_dir: "./experiments/results/cross_dataset"
+
+  # Experiment 7: Model Efficiency
+  efficiency:
+    enabled: true
+    description: "Compare parameter count, model size, inference latency"
+    models:
+      - "custom_cnn"
+      - "resnet50"
+      - "efficientnet"
+      - "mobilenet"
+      - "xception"
+      - "vit"
+    num_warmup: 10
+    num_iterations: 100
+    output_dir: "./experiments/results/efficiency"
+
+  # Experiment 8: Ensemble
+  ensemble:
+    enabled: false
+    description: "Soft-voting ensemble of top-performing models"
+    models:
+      - "resnet50"
+      - "efficientnet"
+      - "vit"
+    method: "soft_voting"
+    output_dir: "./experiments/results/ensemble"

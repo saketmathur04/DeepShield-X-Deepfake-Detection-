@@ -1,0 +1,160 @@
+# =============================================================================
+# DeepShield-X — Default Configuration
+# =============================================================================
+# Central configuration file. All parameters can be overridden via CLI or
+# experiment-specific YAML files.
+
+# --- Project ---
+project:
+  name: "DeepShield-X"
+  version: "0.1.0"
+  seed: 42
+  output_dir: "./experiments"
+
+# --- Dataset ---
+dataset:
+  name: "faceforensics"              # faceforensics | celeb_df | synthetic
+  root: "./data"
+  image_size: 224
+  num_workers: 4
+  pin_memory: true
+  # FaceForensics++ specific
+  manipulation_methods:
+    - "DeepFakes"
+    - "Face2Face"
+    - "FaceSwap"
+    - "NeuralTextures"
+    - "FaceShifter"
+    - "DeepFakeDetection"
+  # Splitting
+  split_ratios:
+    train: 0.7
+    val: 0.15
+    test: 0.15
+  # External test dataset (for cross-dataset evaluation)
+  external_test:
+    name: "celeb_df"
+    root: "./data/celeb_df"
+
+# --- Model ---
+model:
+  name: "resnet50"                   # custom_cnn | resnet50 | efficientnet | mobilenet | xception | vit
+  pretrained: true
+  num_classes: 1                     # Binary classification (sigmoid output)
+  # Fine-tuning strategy: frozen | partial | full
+  finetune_strategy: "full"
+  # Number of layers to unfreeze (only for partial)
+  unfreeze_layers: 2
+  # Dropout
+  dropout: 0.5
+
+# --- Training ---
+training:
+  epochs: 20
+  batch_size: 32
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  optimizer: "adamw"                 # adam | adamw | sgd
+  scheduler: "cosine"               # cosine | step | plateau | none
+  # Scheduler params
+  scheduler_params:
+    step_size: 7
+    gamma: 0.1
+    patience: 3
+    factor: 0.5
+  # Loss
+  loss: "bce"                        # bce | focal
+  label_smoothing: 0.0
+  pos_weight: null                    # Disabled: let model learn features before class balancing
+  focal_alpha: 0.25
+  focal_gamma: 2.0
+  # Mixed precision
+  mixed_precision: true
+  # Early stopping
+  early_stopping:
+    enabled: false
+    patience: 5
+    min_delta: 0.001
+    monitor: "val_loss"                # val_loss | val_roc_auc | val_pr_auc | val_f1 | val_balanced_accuracy
+  # Gradient clipping
+  gradient_clip: 1.0
+  # Checkpointing
+  save_best: true
+  save_last: true
+  checkpoint_monitor: "val_loss"       # val_loss (min) | val_roc_auc (max) | val_pr_auc (max) | val_f1 (max)
+  checkpoint_dir: "./experiments/checkpoints"
+  # Resume
+  resume_from: null
+
+# --- Augmentation ---
+augmentation:
+  enabled: false                       # Disabled for clean baseline experiment
+  # Individual transforms
+  horizontal_flip: true
+  rotation_limit: 15
+  brightness_limit: 0.2
+  contrast_limit: 0.2
+  gaussian_blur:
+    enabled: false                     # Disabled: destroys compression artifacts the model needs
+    blur_limit: 3
+  jpeg_compression:
+    enabled: false                     # Disabled: destroys compression artifacts the model needs
+    quality_lower: 60
+    quality_upper: 100
+  random_crop:
+    enabled: false
+    scale: [0.8, 1.0]
+  color_jitter:
+    enabled: true
+    hue_limit: 0.05
+    saturation_limit: 0.2
+  normalize:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# --- Evaluation ---
+evaluation:
+  batch_size: 64
+  threshold: 0.5
+  metrics:
+    - "accuracy"
+    - "precision"
+    - "recall"
+    - "f1"
+    - "roc_auc"
+    - "pr_auc"
+    - "specificity"
+  save_predictions: true
+  save_plots: true
+  plot_format: "png"                 # png | svg
+  results_dir: "./experiments/results"
+  plots_dir: "./experiments/plots"
+
+# --- Explainability ---
+explainability:
+  enabled: true
+  method: "gradcam"                  # gradcam | gradcam++
+  num_samples: 20
+  save_dir: "./experiments/plots/explainability"
+
+# --- Robustness ---
+robustness:
+  jpeg_qualities: [100, 80, 60, 40, 20]
+  blur_severities: [1, 3, 5, 7, 9]
+  noise_severities: [0.01, 0.03, 0.05, 0.1, 0.15]
+  resolutions: [128, 224, 384]
+
+# --- Smoke Test ---
+smoke_test:
+  num_samples: 50
+  epochs: 2
+  batch_size: 8
+  image_size: 64
+  num_workers: 0
+
+# --- Logging ---
+logging:
+  level: "INFO"
+  log_dir: "./experiments/logs"
+  console: true
+  file: true

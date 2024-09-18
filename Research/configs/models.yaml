@@ -1,0 +1,58 @@
+# =============================================================================
+# DeepShield-X — Model Configurations
+# =============================================================================
+# Per-model architecture details, Grad-CAM target layers, and fine-tuning config.
+
+models:
+  custom_cnn:
+    display_name: "Custom CNN"
+    description: "Simple 3-block CNN baseline"
+    pretrained: false
+    finetune_strategy: "full"
+    gradcam_target_layer: "features.8"  # Last conv layer
+    dropout: 0.5
+    channels: [32, 64, 128]
+
+  resnet50:
+    display_name: "ResNet-50"
+    description: "ResNet-50 with ImageNet pretrained weights"
+    pretrained: true
+    finetune_strategy: "full"
+    gradcam_target_layer: "layer4"
+    dropout: 0.5
+
+  efficientnet:
+    display_name: "EfficientNet-B0"
+    description: "EfficientNet-B0 via timm"
+    pretrained: true
+    variant: "efficientnet_b0"        # b0 | b1 | b2
+    finetune_strategy: "full"
+    gradcam_target_layer: "conv_head"
+    dropout: 0.3
+
+  mobilenet:
+    display_name: "MobileNetV3-Small"
+    description: "MobileNetV3-Small for efficiency analysis"
+    pretrained: true
+    variant: "small"                  # small | large
+    finetune_strategy: "full"
+    gradcam_target_layer: "features.12"
+    dropout: 0.3
+
+  xception:
+    display_name: "Xception"
+    description: "Xception via timm — popular for face manipulation detection"
+    pretrained: true
+    variant: "xception"
+    finetune_strategy: "full"
+    gradcam_target_layer: "act4"
+    dropout: 0.5
+
+  vit:
+    display_name: "ViT-Small"
+    description: "Vision Transformer (ViT-Small/16) via timm"
+    pretrained: true
+    variant: "vit_small_patch16_224"
+    finetune_strategy: "full"
+    gradcam_target_layer: "blocks.11.norm1"
+    dropout: 0.1
