@@ -1,0 +1,7 @@
+model_id,total_parameters,trainable_parameters,model_size_mb,checkpoint_size_mb,cpu_latency_ms,latency_std_ms,throughput_fps
+custom_cnn,93825,93825,0.36,1.1,13.25,1.28,75.5
+resnet50,23510081,23510081,89.89,269.5,93.52,7.64,10.7
+efficientnet,4008829,4008829,15.45,46.35,116.86,107.49,8.6
+mobilenet,1518881,1518881,5.84,17.64,53.89,10.27,18.6
+xception,20809001,20809001,79.59,238.57,1371.96,778.59,0.7
+vit,21666049,21666049,82.65,248.14,73.87,10.89,13.5

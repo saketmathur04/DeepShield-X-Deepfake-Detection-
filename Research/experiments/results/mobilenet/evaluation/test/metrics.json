@@ -1,0 +1,56 @@
+{
+  "experiment_id": "mobilenet",
+  "model": "mobilenet",
+  "dataset": "FaceForensics++ C23",
+  "split": "test",
+  "positive_class": "FAKE",
+  "negative_class": "REAL",
+  "metrics": {
+    "accuracy": 0.8796537699447283,
+    "balanced_accuracy": 0.8104636376190951,
+    "precision": 0.9444088638401434,
+    "recall": 0.911034227109848,
+    "f1": 0.9274213836477987,
+    "specificity": 0.7098930481283422,
+    "sensitivity": 0.911034227109848,
+    "mcc": 0.5792490961305937,
+    "cohen_kappa": 0.5760428011220107,
+    "npv": 0.5959595959595959,
+    "fpr": 0.2901069518716578,
+    "fnr": 0.08896577289015195,
+    "roc_auc": 0.918712926798164,
+    "pr_auc": 0.9819836986268177,
+    "true_positives": 7373,
+    "true_negatives": 1062,
+    "false_positives": 434,
+    "false_negatives": 720,
+    "threshold": 0.5
+  },
+  "class_metrics": {
+    "REAL": {
+      "precision": 0.5959595959595959,
+      "recall": 0.7098930481283422,
+      "f1": 0.6479560707748627,
+      "support": 1496
+    },
+    "FAKE": {
+      "precision": 0.9444088638401434,
+      "recall": 0.911034227109848,
+      "f1": 0.9274213836477987,
+      "support": 8093
+    },
+    "macro_precision": 0.7701842298998697,
+    "macro_recall": 0.8104636376190951,
+    "macro_f1": 0.7876887272113307,
+    "weighted_precision": 0.8900465627921406,
+    "weighted_recall": 0.8796537699447283,
+    "weighted_f1": 0.8838214140933183
+  },
+  "confusion_matrix": {
+    "tn": 1062,
+    "fp": 434,
+    "fn": 720,
+    "tp": 7373
+  },
+  "threshold": 0.5
+}

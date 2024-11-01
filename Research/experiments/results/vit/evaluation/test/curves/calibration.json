@@ -1,0 +1,87 @@
+{
+  "brier_score": 0.0797183339091438,
+  "ece": 0.07408034721297534,
+  "n_bins": 10,
+  "bins": [
+    {
+      "bin": 0,
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 1418,
+      "mean_probability": 0.01410398206690639,
+      "observed_frequency": 0.2468265162200282
+    },
+    {
+      "bin": 1,
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 182,
+      "mean_probability": 0.14490785703554257,
+      "observed_frequency": 0.6098901098901099
+    },
+    {
+      "bin": 2,
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 112,
+      "mean_probability": 0.24654606410435267,
+      "observed_frequency": 0.6607142857142857
+    },
+    {
+      "bin": 3,
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 115,
+      "mean_probability": 0.34865404211956524,
+      "observed_frequency": 0.6782608695652174
+    },
+    {
+      "bin": 4,
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 107,
+      "mean_probability": 0.4557671948014019,
+      "observed_frequency": 0.7757009345794392
+    },
+    {
+      "bin": 5,
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 95,
+      "mean_probability": 0.5554122121710526,
+      "observed_frequency": 0.8
+    },
+    {
+      "bin": 6,
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 100,
+      "mean_probability": 0.6500537109375,
+      "observed_frequency": 0.79
+    },
+    {
+      "bin": 7,
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 136,
+      "mean_probability": 0.7539493336397058,
+      "observed_frequency": 0.8161764705882353
+    },
+    {
+      "bin": 8,
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 216,
+      "mean_probability": 0.8549646448206019,
+      "observed_frequency": 0.7592592592592593
+    },
+    {
+      "bin": 9,
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 7108,
+      "mean_probability": 0.9957567342694851,
+      "observed_frequency": 0.9801631963984243
+    }
+  ]
+}

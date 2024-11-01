@@ -1,0 +1,79 @@
+{
+  "brier_score": 0.0499,
+  "expected_calibration_error": 0.0407,
+  "calibration_bins": [
+    {
+      "bin": "[0.0, 0.1]",
+      "samples": 1314,
+      "avg_confidence": 0.015,
+      "empirical_accuracy": 0.1385,
+      "calibration_gap": 0.1235
+    },
+    {
+      "bin": "[0.1, 0.2]",
+      "samples": 129,
+      "avg_confidence": 0.1463,
+      "empirical_accuracy": 0.5194,
+      "calibration_gap": 0.373
+    },
+    {
+      "bin": "[0.2, 0.3]",
+      "samples": 94,
+      "avg_confidence": 0.2505,
+      "empirical_accuracy": 0.4681,
+      "calibration_gap": 0.2176
+    },
+    {
+      "bin": "[0.3, 0.4]",
+      "samples": 76,
+      "avg_confidence": 0.3461,
+      "empirical_accuracy": 0.6579,
+      "calibration_gap": 0.3118
+    },
+    {
+      "bin": "[0.4, 0.5]",
+      "samples": 83,
+      "avg_confidence": 0.4553,
+      "empirical_accuracy": 0.6024,
+      "calibration_gap": 0.1471
+    },
+    {
+      "bin": "[0.5, 0.6]",
+      "samples": 92,
+      "avg_confidence": 0.5527,
+      "empirical_accuracy": 0.7935,
+      "calibration_gap": 0.2408
+    },
+    {
+      "bin": "[0.6, 0.7]",
+      "samples": 116,
+      "avg_confidence": 0.6494,
+      "empirical_accuracy": 0.8362,
+      "calibration_gap": 0.1868
+    },
+    {
+      "bin": "[0.7, 0.8]",
+      "samples": 130,
+      "avg_confidence": 0.7505,
+      "empirical_accuracy": 0.7692,
+      "calibration_gap": 0.0187
+    },
+    {
+      "bin": "[0.8, 0.9]",
+      "samples": 200,
+      "avg_confidence": 0.857,
+      "empirical_accuracy": 0.895,
+      "calibration_gap": 0.038
+    },
+    {
+      "bin": "[0.9, 1.0]",
+      "samples": 7355,
+      "avg_confidence": 0.9953,
+      "empirical_accuracy": 0.9859,
+      "calibration_gap": 0.0094
+    }
+  ],
+  "default_threshold": 0.5,
+  "validation_selected_threshold": 0.5,
+  "threshold_selection_protocol": "Validated on validation set; frozen prior to test evaluation to eliminate test leakage."
+}

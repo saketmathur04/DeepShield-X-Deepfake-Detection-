@@ -1,0 +1,2 @@
+accuracy,balanced_accuracy,precision,recall,f1,specificity,sensitivity,mcc,cohen_kappa,npv,fpr,fnr,roc_auc,pr_auc,true_positives,true_negatives,false_positives,false_negatives,threshold
+0.5,0.5,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.5,0.0,1.0,1.0,1.0,0,15,0,15,0.5

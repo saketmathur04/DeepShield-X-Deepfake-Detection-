@@ -1,0 +1,44 @@
+[
+  {
+    "sample_index": 1,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0000.jpg",
+    "predicted_label": "FAKE",
+    "probability": 1.0,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  },
+  {
+    "sample_index": 2,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0054.jpg",
+    "predicted_label": "FAKE",
+    "probability": 1.0,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  },
+  {
+    "sample_index": 3,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0108.jpg",
+    "predicted_label": "FAKE",
+    "probability": 1.0,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  },
+  {
+    "sample_index": 4,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0162.jpg",
+    "predicted_label": "FAKE",
+    "probability": 0.9995,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  },
+  {
+    "sample_index": 5,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0216.jpg",
+    "predicted_label": "FAKE",
+    "probability": 1.0,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  },
+  {
+    "sample_index": 6,
+    "path": "data\\faces\\test\\fake\\Deepfakes\\040_997\\frame_0270.jpg",
+    "predicted_label": "FAKE",
+    "probability": 0.899,
+    "salient_focus_region": "Facial Boundary / Perioral / Nasal"
+  }
+]

@@ -1,0 +1,9 @@
+perturbation_id,perturbation_name,evaluated_samples,detection_rate_recall,mean_fake_probability,performance_retention_pct
+clean,Clean Baseline,502,0.9821,0.9699,100.0
+jpeg_90,JPEG Quality 90,502,0.9482,0.9289,96.55
+jpeg_70,JPEG Quality 70,502,0.9641,0.9384,98.17
+jpeg_50,JPEG Quality 50,502,0.7251,0.7135,73.83
+jpeg_30,JPEG Quality 30,502,0.3964,0.4029,40.36
+gaussian_blur,Gaussian Blur (r=1.5),502,1.0,0.9992,101.82
+gaussian_noise,Gaussian Noise (std=0.05),502,0.994,0.9685,101.21
+downscale_upscale,Downscale 4x + Upscale,502,1.0,0.9955,101.82

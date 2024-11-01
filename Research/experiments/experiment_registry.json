@@ -1,0 +1,146 @@
+[
+    {
+        "experiment_id": "custom_cnn",
+        "architecture": "custom_cnn",
+        "pretrained": false,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.8439879028052978,
+            "precision": 0.8439879028052978,
+            "recall": 1.0,
+            "f1": 0.9153941861780341,
+            "roc_auc": 0.5607377323507275,
+            "pr_auc": 0.8799294920285052,
+            "specificity": 0.0,
+            "balanced_accuracy": 0,
+            "mcc": 0
+        },
+        "notes": "Baseline model."
+    },
+    {
+        "experiment_id": "class_balanced_custom_cnn",
+        "architecture": "custom_cnn",
+        "pretrained": false,
+        "pos_weight": true,
+        "test_metrics": {
+            "accuracy": 0.4323704244446762,
+            "precision": 0.8894767783656673,
+            "recall": 0.3739033732855554,
+            "f1": 0.5264897781644193,
+            "roc_auc": 0.6196086305521838,
+            "pr_auc": 0.8965926449806365,
+            "specificity": 0.7486631016042781,
+            "balanced_accuracy": 0,
+            "mcc": 0
+        },
+        "notes": "Controlled experiment: tests effect of class weighting."
+    },
+    {
+        "experiment_id": "resnet50",
+        "architecture": "resnet50",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.9133382000208572,
+            "precision": 0.97094682230869,
+            "recall": 0.9249969109106635,
+            "f1": 0.9474150477757388,
+            "roc_auc": 0.9577633110015852,
+            "pr_auc": 0.9914482686174936,
+            "specificity": 0.8502673796791443,
+            "balanced_accuracy": 0.8876321452949039,
+            "mcc": 0.7087282894225378
+        },
+        "notes": "Baseline model."
+    },
+    {
+        "experiment_id": "resnet50_regularized",
+        "architecture": "resnet50",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.9388883095213265,
+            "precision": 0.9755479538831876,
+            "recall": 0.951439515630792,
+            "f1": 0.963342925059427,
+            "roc_auc": 0.9717944668628267,
+            "pr_auc": 0.9938460969301759,
+            "specificity": 0.8709893048128342,
+            "balanced_accuracy": 0.9112144102218132,
+            "mcc": 0.7821407482978392
+        },
+        "notes": "Controlled experiment: applies strong regularization to combat overfitting observed in ResNet50 baseline."
+    },
+    {
+        "experiment_id": "efficientnet",
+        "architecture": "efficientnet",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.9208468036291584,
+            "precision": 0.9720648815653965,
+            "recall": 0.9330285431854689,
+            "f1": 0.9521467751087573,
+            "roc_auc": 0.9546699679725861,
+            "pr_auc": 0.9879224984010073,
+            "specificity": 0.8549465240641712,
+            "balanced_accuracy": 0.89398753362482,
+            "mcc": 0.7289931736527674
+        },
+        "notes": "Baseline model."
+    },
+    {
+        "experiment_id": "mobilenet",
+        "architecture": "mobilenet",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.8796537699447283,
+            "precision": 0.9444088638401434,
+            "recall": 0.911034227109848,
+            "f1": 0.9274213836477987,
+            "roc_auc": 0.918712926798164,
+            "pr_auc": 0.9819836986268177,
+            "specificity": 0.7098930481283422,
+            "balanced_accuracy": 0.8104636376190951,
+            "mcc": 0.5792490961305937
+        },
+        "notes": "Baseline model."
+    },
+    {
+        "experiment_id": "xception",
+        "architecture": "xception",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.9370111586192512,
+            "precision": 0.9776757239443806,
+            "recall": 0.9469912269862845,
+            "f1": 0.962088877730354,
+            "roc_auc": 0.9706235450719609,
+            "pr_auc": 0.9931280728021344,
+            "specificity": 0.8830213903743316,
+            "balanced_accuracy": 0.915006308680308,
+            "mcc": 0.7797509359254453
+        },
+        "notes": "Baseline model."
+    },
+    {
+        "experiment_id": "vit",
+        "architecture": "vit",
+        "pretrained": true,
+        "pos_weight": false,
+        "test_metrics": {
+            "accuracy": 0.9005110021900093,
+            "precision": 0.96629653821032,
+            "recall": 0.9139997528728531,
+            "f1": 0.9394208788417577,
+            "roc_auc": 0.951231704166339,
+            "pr_auc": 0.9894337381999487,
+            "specificity": 0.8275401069518716,
+            "balanced_accuracy": 0.8707699299123624,
+            "mcc": 0.6705856182838443
+        },
+        "notes": "Baseline model."
+    }
+]

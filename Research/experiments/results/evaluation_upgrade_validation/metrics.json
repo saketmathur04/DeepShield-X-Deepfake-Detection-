@@ -1,0 +1,56 @@
+{
+  "experiment_id": "smoke_test_evaluation",
+  "model": "custom_cnn",
+  "dataset": "Synthetic smoke test",
+  "split": "test",
+  "positive_class": "FAKE",
+  "negative_class": "REAL",
+  "metrics": {
+    "accuracy": 0.5,
+    "balanced_accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "specificity": 1.0,
+    "sensitivity": 0.0,
+    "mcc": 0.0,
+    "cohen_kappa": 0.0,
+    "npv": 0.5,
+    "fpr": 0.0,
+    "fnr": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "true_positives": 0,
+    "true_negatives": 15,
+    "false_positives": 0,
+    "false_negatives": 15,
+    "threshold": 0.5
+  },
+  "class_metrics": {
+    "REAL": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "support": 15
+    },
+    "FAKE": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "support": 15
+    },
+    "macro_precision": 0.25,
+    "macro_recall": 0.5,
+    "macro_f1": 0.3333333333333333,
+    "weighted_precision": 0.25,
+    "weighted_recall": 0.5,
+    "weighted_f1": 0.3333333333333333
+  },
+  "confusion_matrix": {
+    "tn": 15,
+    "fp": 0,
+    "fn": 15,
+    "tp": 0
+  },
+  "threshold": 0.5
+}

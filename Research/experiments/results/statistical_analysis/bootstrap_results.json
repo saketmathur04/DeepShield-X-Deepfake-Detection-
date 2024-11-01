@@ -1,0 +1,58 @@
+[
+  {
+    "model": "ResNet50 Regularized",
+    "iterations": 1000,
+    "accuracy": {
+      "mean": 0.9389,
+      "std": 0.0025,
+      "ci_lower": 0.9339,
+      "ci_upper": 0.9436
+    },
+    "f1": {
+      "mean": 0.9634,
+      "std": 0.0015,
+      "ci_lower": 0.9603,
+      "ci_upper": 0.9663
+    },
+    "roc_auc": {
+      "mean": 0.9719,
+      "std": 0.0021,
+      "ci_lower": 0.9676,
+      "ci_upper": 0.9759
+    },
+    "pr_auc": {
+      "mean": 0.9939,
+      "std": 0.0006,
+      "ci_lower": 0.9925,
+      "ci_upper": 0.9951
+    }
+  },
+  {
+    "model": "Xception",
+    "iterations": 1000,
+    "accuracy": {
+      "mean": 0.9371,
+      "std": 0.0025,
+      "ci_lower": 0.9322,
+      "ci_upper": 0.9422
+    },
+    "f1": {
+      "mean": 0.9621,
+      "std": 0.0015,
+      "ci_lower": 0.9591,
+      "ci_upper": 0.9653
+    },
+    "roc_auc": {
+      "mean": 0.9707,
+      "std": 0.0021,
+      "ci_lower": 0.9662,
+      "ci_upper": 0.9747
+    },
+    "pr_auc": {
+      "mean": 0.9931,
+      "std": 0.0007,
+      "ci_lower": 0.9917,
+      "ci_upper": 0.9944
+    }
+  }
+]

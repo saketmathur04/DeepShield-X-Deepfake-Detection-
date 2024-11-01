@@ -1,0 +1,87 @@
+{
+  "brier_score": 0.06620392034476764,
+  "ece": 0.059710237477392306,
+  "n_bins": 10,
+  "bins": [
+    {
+      "bin": 0,
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 1493,
+      "mean_probability": 0.010997076603045658,
+      "observed_frequency": 0.22505023442732752
+    },
+    {
+      "bin": 1,
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 110,
+      "mean_probability": 0.14543013139204544,
+      "observed_frequency": 0.5545454545454546
+    },
+    {
+      "bin": 2,
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 89,
+      "mean_probability": 0.2526073670119382,
+      "observed_frequency": 0.5955056179775281
+    },
+    {
+      "bin": 3,
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 63,
+      "mean_probability": 0.35256231398809523,
+      "observed_frequency": 0.6507936507936508
+    },
+    {
+      "bin": 4,
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 66,
+      "mean_probability": 0.45130504261363635,
+      "observed_frequency": 0.7727272727272727
+    },
+    {
+      "bin": 5,
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 81,
+      "mean_probability": 0.5550853587962963,
+      "observed_frequency": 0.691358024691358
+    },
+    {
+      "bin": 6,
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 78,
+      "mean_probability": 0.6492951221955128,
+      "observed_frequency": 0.7564102564102564
+    },
+    {
+      "bin": 7,
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 102,
+      "mean_probability": 0.7503781786151961,
+      "observed_frequency": 0.8235294117647058
+    },
+    {
+      "bin": 8,
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 167,
+      "mean_probability": 0.8546003695733533,
+      "observed_frequency": 0.8502994011976048
+    },
+    {
+      "bin": 9,
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 7340,
+      "mean_probability": 0.9972594383302111,
+      "observed_frequency": 0.9822888283378747
+    }
+  ]
+}

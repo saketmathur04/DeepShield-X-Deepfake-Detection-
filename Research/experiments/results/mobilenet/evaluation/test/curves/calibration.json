@@ -1,0 +1,87 @@
+{
+  "brier_score": 0.09594860820125369,
+  "ece": 0.07970908939658142,
+  "n_bins": 10,
+  "bins": [
+    {
+      "bin": 0,
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 1185,
+      "mean_probability": 0.020621475539629973,
+      "observed_frequency": 0.30042194092827
+    },
+    {
+      "bin": 1,
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 195,
+      "mean_probability": 0.14315185546875,
+      "observed_frequency": 0.5743589743589743
+    },
+    {
+      "bin": 2,
+      "lower": 0.2,
+      "upper": 0.30000000000000004,
+      "count": 140,
+      "mean_probability": 0.24557669503348215,
+      "observed_frequency": 0.5857142857142857
+    },
+    {
+      "bin": 3,
+      "lower": 0.30000000000000004,
+      "upper": 0.4,
+      "count": 137,
+      "mean_probability": 0.34514712591240876,
+      "observed_frequency": 0.656934306569343
+    },
+    {
+      "bin": 4,
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 125,
+      "mean_probability": 0.448927734375,
+      "observed_frequency": 0.64
+    },
+    {
+      "bin": 5,
+      "lower": 0.5,
+      "upper": 0.6000000000000001,
+      "count": 118,
+      "mean_probability": 0.5492460606461864,
+      "observed_frequency": 0.6779661016949152
+    },
+    {
+      "bin": 6,
+      "lower": 0.6000000000000001,
+      "upper": 0.7000000000000001,
+      "count": 132,
+      "mean_probability": 0.6499763257575758,
+      "observed_frequency": 0.6363636363636364
+    },
+    {
+      "bin": 7,
+      "lower": 0.7000000000000001,
+      "upper": 0.8,
+      "count": 201,
+      "mean_probability": 0.7474954329912935,
+      "observed_frequency": 0.7164179104477612
+    },
+    {
+      "bin": 8,
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 288,
+      "mean_probability": 0.8545464409722222,
+      "observed_frequency": 0.8333333333333334
+    },
+    {
+      "bin": 9,
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 7068,
+      "mean_probability": 0.9946408576727858,
+      "observed_frequency": 0.9656196943972836
+    }
+  ]
+}

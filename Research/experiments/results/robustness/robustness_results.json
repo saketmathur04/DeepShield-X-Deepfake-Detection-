@@ -1,0 +1,66 @@
+[
+  {
+    "perturbation_id": "clean",
+    "perturbation_name": "Clean Baseline",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.9821,
+    "mean_fake_probability": 0.9699,
+    "performance_retention_pct": 100.0
+  },
+  {
+    "perturbation_id": "jpeg_90",
+    "perturbation_name": "JPEG Quality 90",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.9482,
+    "mean_fake_probability": 0.9289,
+    "performance_retention_pct": 96.55
+  },
+  {
+    "perturbation_id": "jpeg_70",
+    "perturbation_name": "JPEG Quality 70",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.9641,
+    "mean_fake_probability": 0.9384,
+    "performance_retention_pct": 98.17
+  },
+  {
+    "perturbation_id": "jpeg_50",
+    "perturbation_name": "JPEG Quality 50",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.7251,
+    "mean_fake_probability": 0.7135,
+    "performance_retention_pct": 73.83
+  },
+  {
+    "perturbation_id": "jpeg_30",
+    "perturbation_name": "JPEG Quality 30",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.3964,
+    "mean_fake_probability": 0.4029,
+    "performance_retention_pct": 40.36
+  },
+  {
+    "perturbation_id": "gaussian_blur",
+    "perturbation_name": "Gaussian Blur (r=1.5)",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 1.0,
+    "mean_fake_probability": 0.9992,
+    "performance_retention_pct": 101.82
+  },
+  {
+    "perturbation_id": "gaussian_noise",
+    "perturbation_name": "Gaussian Noise (std=0.05)",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 0.994,
+    "mean_fake_probability": 0.9685,
+    "performance_retention_pct": 101.21
+  },
+  {
+    "perturbation_id": "downscale_upscale",
+    "perturbation_name": "Downscale 4x + Upscale",
+    "evaluated_samples": 502,
+    "detection_rate_recall": 1.0,
+    "mean_fake_probability": 0.9955,
+    "performance_retention_pct": 101.82
+  }
+]

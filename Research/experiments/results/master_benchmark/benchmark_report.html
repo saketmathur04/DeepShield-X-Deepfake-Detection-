@@ -1,0 +1,100 @@
+<html><head><meta charset='utf-8'><title>DeepShield-X Master Benchmark</title></head><body><pre># DeepShield-X — Master Benchmark Report
+
+*Generated: 2026-09-06T16:22:23*
+
+## 1. Executive Summary
+
+Primary architecture ranking is based primarily on ROC-AUC, PR-AUC, F1, specificity, balanced accuracy, and MCC—not accuracy alone. Best saved ROC-AUC: Custom CNN (1.0000). Best saved PR-AUC: Custom CNN (1.0000).
+
+## 2. Dataset
+
+FaceForensics++ C23. Evaluation labels follow REAL=0 (negative) and FAKE=1 (positive).
+
+## 3. Data Leakage Prevention
+
+Frame splits are identity/source-aware and fixed before model training. This report does not change splits or datasets.
+
+## 4. Class Distribution
+
+Use the saved dataset statistics from each evaluation package where available. Test data are never rebalanced for reporting.
+
+## 5. Experimental Setup
+
+Each row is sourced from one experiment-level saved result only. Nested curves, calibration, confidence, threshold, and error files are artifacts, not experiments.
+
+## 6. Primary Architecture Comparison
+
+| Model | Accuracy | Precision | Recall | Specificity | F1 | ROC-AUC | PR-AUC | Balanced Accuracy | MCC | TP | TN | FP | FN | Threshold |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Custom CNN | 0.5000 | 0.0000 | 0.0000 | 1.0000 | 0.0000 | 1.0000 | 1.0000 | N/A | N/A | 0 | 15 | 0 | 15 | 0.5000 |
+| ResNet50 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| EfficientNet | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| MobileNetV3 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Xception | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| Vision Transformer (ViT) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+## 7. Controlled Experiments
+
+### 7.1 Custom CNN Class-Balance Experiment
+
+| Model | Accuracy | Precision | Recall | Specificity | F1 | ROC-AUC | PR-AUC | Balanced Accuracy | MCC |
+|---|---|---|---|---|---|---|---|---|---|
+| Custom CNN | 0.5000 | 0.0000 | 0.0000 | 1.0000 | 0.0000 | 1.0000 | 1.0000 | N/A | N/A |
+| Class-Balanced Custom CNN | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+The unweighted Custom CNN is retained as a class-imbalance control. This table reports measured behavior only; it does not assert improvement without supporting metrics.
+
+### 7.2 ResNet50 Regularization Experiment
+
+| Model | Accuracy | Precision | Recall | Specificity | F1 | ROC-AUC | PR-AUC | Balanced Accuracy | MCC |
+|---|---|---|---|---|---|---|---|---|---|
+| ResNet50 | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+| ResNet50 (Regularized) | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
+
+The regularized run is a controlled ResNet50 strategy comparison (train-only augmentation, automatic BCE class weighting, validation ROC-AUC monitoring, and early stopping). It is not a seventh architecture.
+
+## 8. ROC Comparison
+
+Saved ROC curve CSVs: Not available from saved artifacts.
+
+## 9. Precision-Recall Comparison
+
+Saved PR curve CSVs: Not available from saved artifacts.
+
+## 10. Confusion Matrices
+
+Saved count confusion matrices: Not available from saved artifacts.
+Rows are actual labels; columns are predicted labels.
+
+## 11. Calibration Analysis
+
+Saved calibration outputs: Not available from saved artifacts.
+
+## 12. Threshold Analysis
+
+Threshold selection is valid only when performed from saved validation predictions. Test thresholds are not tuned by this report.
+
+## 13. Confidence Analysis
+
+Saved confidence outputs: Not available from saved artifacts.
+
+## 14. Error Analysis
+
+Saved prediction/error CSVs: Not available from saved artifacts.
+
+## 15. Computational Comparison
+
+Parameter counts and timing are reported only when present in saved experiment summaries; otherwise N/A.
+
+## 16. Current Findings
+
+Best F1: Custom CNN (0.0000). Best specificity: Custom CNN (1.0000). Best balanced accuracy: N/A. Best MCC: N/A.
+
+## 17. Limitations
+
+Unavailable artifacts and metrics are intentionally reported as N/A. This report does not infer missing probabilities, timings, calibration, or validation thresholds.
+
+## 18. Next Phase
+
+Robustness testing and explainability evaluation may proceed separately; neither is run by this report generator.
+</pre></body></html>

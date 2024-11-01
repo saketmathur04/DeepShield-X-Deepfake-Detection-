@@ -1,0 +1,86 @@
+{
+  "experiment_id": "resnet50_regularized",
+  "model": "resnet50",
+  "dataset": "FaceForensics++ C23",
+  "split": "test",
+  "checkpoint_path": "experiments/checkpoints/resnet50_regularized/resnet50_best.pth",
+  "evaluation_timestamp": "2026-09-06T07:49:39.321155+00:00",
+  "random_seed": 42,
+  "epochs": 20,
+  "batch_size": 64,
+  "learning_rate": 0.0001,
+  "optimizer": "adamw",
+  "scheduler": "cosine",
+  "pos_weight": 0.1592062548580312,
+  "augmentation": {
+    "enabled": true,
+    "horizontal_flip": true,
+    "rotation_limit": 15,
+    "brightness_limit": 0.2,
+    "contrast_limit": 0.2,
+    "gaussian_blur": {
+      "enabled": false,
+      "blur_limit": 3
+    },
+    "jpeg_compression": {
+      "enabled": false,
+      "quality_lower": 60,
+      "quality_upper": 100
+    },
+    "random_crop": {
+      "enabled": false,
+      "scale": [
+        0.8,
+        1.0
+      ]
+    },
+    "color_jitter": {
+      "enabled": true,
+      "hue_limit": 0.05,
+      "saturation_limit": 0.2
+    },
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    }
+  },
+  "pretrained": true,
+  "video_level": {
+    "video_level_evaluation_available": false,
+    "reason": "Reliable source_id is unavailable for one or more frames."
+  },
+  "dataset_statistics": {
+    "train": {
+      "REAL": 6964,
+      "FAKE": 43742,
+      "total": 50706,
+      "real_prevalence": 0.13734074862935353,
+      "fake_prevalence": 0.8626592513706465,
+      "fake_to_real_ratio": 6.281160252728317
+    },
+    "val": {
+      "REAL": 1497,
+      "FAKE": 7481,
+      "total": 8978,
+      "real_prevalence": 0.16674092225439965,
+      "fake_prevalence": 0.8332590777456004,
+      "fake_to_real_ratio": 4.997327989311957
+    },
+    "test": {
+      "REAL": 1496,
+      "FAKE": 8093,
+      "total": 9589,
+      "real_prevalence": 0.15601209719470227,
+      "fake_prevalence": 0.8439879028052978,
+      "fake_to_real_ratio": 5.40975935828877
+    }
+  }
+}

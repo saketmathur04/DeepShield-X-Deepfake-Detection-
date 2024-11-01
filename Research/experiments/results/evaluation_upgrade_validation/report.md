@@ -1,0 +1,35 @@
+# DeepShield-X — Experiment Report
+
+*Generated: 2026-09-06 11:21:47*
+
+## Completed Experiments
+
+No compatible completed evaluation packages were found.
+
+### custom_cnn — custom_cnn_metrics
+
+*Results file: `custom_cnn\custom_cnn_metrics.json`*
+
+### curves — calibration
+
+*Results file: `evaluation_upgrade_validation\curves\calibration.json`*
+
+### curves — confidence_statistics
+
+*Results file: `evaluation_upgrade_validation\curves\confidence_statistics.json`*
+
+### evaluation_upgrade_validation — experiment_summary
+
+*Results file: `evaluation_upgrade_validation\experiment_summary.json`*
+
+### evaluation_upgrade_validation — metrics
+
+*Results file: `evaluation_upgrade_validation\metrics.json`*
+
+### evaluation_upgrade_validation — threshold_metrics
+
+*Results file: `evaluation_upgrade_validation\threshold_metrics.json`*
+
+###  — master_results
+
+*Results file: `master_results.json`*

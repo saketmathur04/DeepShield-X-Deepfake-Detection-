@@ -1,0 +1,62 @@
+[
+  {
+    "model_id": "custom_cnn",
+    "total_parameters": 93825,
+    "trainable_parameters": 93825,
+    "model_size_mb": 0.36,
+    "checkpoint_size_mb": 1.1,
+    "cpu_latency_ms": 13.25,
+    "latency_std_ms": 1.28,
+    "throughput_fps": 75.5
+  },
+  {
+    "model_id": "resnet50",
+    "total_parameters": 23510081,
+    "trainable_parameters": 23510081,
+    "model_size_mb": 89.89,
+    "checkpoint_size_mb": 269.5,
+    "cpu_latency_ms": 93.52,
+    "latency_std_ms": 7.64,
+    "throughput_fps": 10.7
+  },
+  {
+    "model_id": "efficientnet",
+    "total_parameters": 4008829,
+    "trainable_parameters": 4008829,
+    "model_size_mb": 15.45,
+    "checkpoint_size_mb": 46.35,
+    "cpu_latency_ms": 116.86,
+    "latency_std_ms": 107.49,
+    "throughput_fps": 8.6
+  },
+  {
+    "model_id": "mobilenet",
+    "total_parameters": 1518881,
+    "trainable_parameters": 1518881,
+    "model_size_mb": 5.84,
+    "checkpoint_size_mb": 17.64,
+    "cpu_latency_ms": 53.89,
+    "latency_std_ms": 10.27,
+    "throughput_fps": 18.6
+  },
+  {
+    "model_id": "xception",
+    "total_parameters": 20809001,
+    "trainable_parameters": 20809001,
+    "model_size_mb": 79.59,
+    "checkpoint_size_mb": 238.57,
+    "cpu_latency_ms": 1371.96,
+    "latency_std_ms": 778.59,
+    "throughput_fps": 0.7
+  },
+  {
+    "model_id": "vit",
+    "total_parameters": 21666049,
+    "trainable_parameters": 21666049,
+    "model_size_mb": 82.65,
+    "checkpoint_size_mb": 248.14,
+    "cpu_latency_ms": 73.87,
+    "latency_std_ms": 10.89,
+    "throughput_fps": 13.5
+  }
+]

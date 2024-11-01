@@ -1,0 +1,56 @@
+{
+  "experiment_id": "vit",
+  "model": "vit",
+  "dataset": "FaceForensics++ C23",
+  "split": "test",
+  "positive_class": "FAKE",
+  "negative_class": "REAL",
+  "metrics": {
+    "accuracy": 0.9005110021900093,
+    "balanced_accuracy": 0.8707699299123624,
+    "precision": 0.96629653821032,
+    "recall": 0.9139997528728531,
+    "f1": 0.9394208788417577,
+    "specificity": 0.8275401069518716,
+    "sensitivity": 0.9139997528728531,
+    "mcc": 0.6705856182838443,
+    "cohen_kappa": 0.6624854973899914,
+    "npv": 0.640124095139607,
+    "fpr": 0.17245989304812837,
+    "fnr": 0.08600024712714693,
+    "roc_auc": 0.951231704166339,
+    "pr_auc": 0.9894337381999487,
+    "true_positives": 7397,
+    "true_negatives": 1238,
+    "false_positives": 258,
+    "false_negatives": 696,
+    "threshold": 0.5
+  },
+  "class_metrics": {
+    "REAL": {
+      "precision": 0.640124095139607,
+      "recall": 0.8275401069518716,
+      "f1": 0.721865889212828,
+      "support": 1496
+    },
+    "FAKE": {
+      "precision": 0.96629653821032,
+      "recall": 0.9139997528728531,
+      "f1": 0.9394208788417577,
+      "support": 8093
+    },
+    "macro_precision": 0.8032103166749636,
+    "macro_recall": 0.8707699299123624,
+    "macro_f1": 0.8306433840272929,
+    "weighted_precision": 0.9154096913197386,
+    "weighted_recall": 0.9005110021900093,
+    "weighted_f1": 0.9054796686545767
+  },
+  "confusion_matrix": {
+    "tn": 1238,
+    "fp": 258,
+    "fn": 696,
+    "tp": 7397
+  },
+  "threshold": 0.5
+}
