@@ -61,6 +61,19 @@ logs/
 .coverage
 htmlcov/
 
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Frontend build / Nitro artifacts
+Frontend/.output/
+Frontend/.wrangler/
+
+# Generated forensic outputs
+backend/static/forensics/*.mp4
+Research/experiments/logs/*.log
+
 # OS
 Thumbs.db
 

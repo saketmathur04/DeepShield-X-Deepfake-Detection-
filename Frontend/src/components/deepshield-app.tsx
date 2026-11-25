@@ -3071,7 +3071,7 @@ function About() {
         <pre className="rounded-lg bg-inset p-4 overflow-x-auto text-[11px] text-cyan border border-line">
 {`@article{deepshieldx2026,
   title={DeepShield-X: Robust and Explainable DeepFake Detection Using CNNs and Vision Transformers},
-  author={Saket Mathur},
+  author={DeepShield-X Contributors},
   year={2026},
   benchmark={FaceForensics++ (C23)},
   protocol={Frozen Identity-Isolated Held-Out Test (N=9,589), Seed=42}
