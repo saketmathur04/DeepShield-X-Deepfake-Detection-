@@ -29,7 +29,8 @@ data/processed/
 data/faces/
 
 # Experiment outputs (can be large)
-experiments/checkpoints/
+experiments/checkpoints/*
+!experiments/checkpoints/README.md
 experiments/logs/*.log
 
 # OS
