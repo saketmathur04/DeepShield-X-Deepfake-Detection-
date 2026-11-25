@@ -157,11 +157,11 @@ def generate_pdf():
     pdf.set_xy(22, pdf.get_y())
     pdf.set_font('Helvetica', '', 8.5)
     pdf.set_text_color(40, 45, 55)
-    pdf.cell(85, 4.5, 'Name: [Student Name]', align='L')
+    pdf.cell(85, 4.5, 'Name: Saket', align='L')
     pdf.cell(85, 4.5, 'Project Evaluation Committee', align='L', new_x="LMARGIN", new_y="NEXT")
     
     pdf.set_xy(22, pdf.get_y())
-    pdf.cell(85, 4.5, 'Roll No: [Roll Number]', align='L')
+    pdf.cell(85, 4.5, 'Enrollment No: E23CSEU1361', align='L')
     pdf.cell(85, 4.5, 'Department of Computer Science & Engg.', align='L', new_x="LMARGIN", new_y="NEXT")
     
     pdf.set_xy(22, pdf.get_y())
